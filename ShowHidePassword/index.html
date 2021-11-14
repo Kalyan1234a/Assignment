@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Show Hide Password</title>
+      <style>
+          div {
+              width: 500px;
+              box-shadow: 0 0 10px black;
+              padding: 30px;
+              margin: 100px auto;
+              background-color: tomato;
+          }
+          body {
+            background-color:violet;
+          }
+      </style>
+      <script>
+          function fnShowHidePassword() {
+           var inputRef = document.getElementById('i1');
+           var buttonRef = document.querySelector('.Btn');
+           inputRef.type = "text";
+           buttonRef.innerText = "Hide Password";
+          inputRef.innerText = "hide password";
+          }
+          function fn1() {
+          var input = document.getElementById('i1');
+         
+          input.innerText ="Show password";
+          input.type = "password";
+          var buttonRef = document.querySelector('.Btn');
+          buttonRef.innerText = "Show password";
+          }
+      </script>
+
+    </head>
+    <body>
+        <div>
+      <h2>Show / Hide Password</h2>
+      <label>Enter Text</label>
+      <input type="password" id="i1" />
+      <button onclick="fnShowHidePassword()" ondblclick="fn1()" class="Btn">Show Password</button>
+      </div>
+    </body>
+</html> 

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <style>
+          div {
+              width: 100vw;
+              height: 100vh;
+              align-items: center;
+              justify-content: center;
+              display: flex;
+               
+          }
+          #main {
+              width: 50%;
+              height: 40%;
+              padding: 10px;
+              box-shadow: 0 0 10px black;
+              margin-top: 100px auto;
+              background-color: thistle;
+              text-align: center;
+              font-weight: bold;
+              flex-direction: column;
+            
+             
+          }
+          button {
+              width: 150px;
+              height: 30px;
+              color: tomato;
+              padding: 5px;
+              font-weight: bold;
+              margin: 10px;
+              
+          }
+          .btn {
+              display:flex;
+              flex-direction: row;
+          }
+          body {
+              background-color:rgb(5, 3, 22);
+          }
+      </style>
+      <script>
+          function GM() {
+            var nameRef = document.getElementById("name");
+            nameRef.innerText = "Good Morning";
+            nameRef.style.color = "grey";
+          }
+
+          function GE() {
+            var nameRef = document.getElementById("name");
+            nameRef.innerText = "Good Evening";
+            nameRef.style.color = "green";
+          }
+
+          function GN() {
+            var nameRef = document.getElementById("name");
+            nameRef.innerText = "Good Night";
+            nameRef.style.color = "tomato";
+          }
+      </script>
+
+    </head>
+    <body>
+<div>
+    <div id="main">
+        <div id="i1"><span id="name"></span>Monu Kumar here!</div>
+        <div class="btn">
+           <button onclick="GM()">Good Morning</button>
+           <button onclick="GE()">Good Evening</button>
+            <button onclick="GN()">Good Night</button>
+        </div>
+    </div>
+</div>
+    </body>
+</html>

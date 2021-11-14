@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+     <style>
+         body {
+             background-color: burlywood;
+         }
+         #main{
+             align-items: center;
+             justify-content: center;
+             display: grid;
+
+         }
+        #i1 {
+        
+             margin: 100px auto;
+            font-style: italic;
+            
+            text-align: center;
+        }
+        #i2 {
+           width: 300px;
+           height: 40px;
+           box-shadow: 0 0 10px black;
+            padding: 20px;
+           margin: 20px;
+           background-color: coral;
+            
+        }
+        #i3 {
+            width: 300px;
+           height: 40px;
+           box-shadow: 0 0 10px black;
+            padding: 20px;
+            background-color: coral;
+            margin: 30px;
+        }
+        #i4 {
+            width: 300px;
+           height: 40px;
+           box-shadow: 0 0 10px black;
+            padding: 20px;
+            background-color: coral;
+            margin: 30px;  
+        }
+
+     </style>
+     <script>
+         function fn(){
+             var pRef = document.getElementById("p1")
+             pRef.innerText = "yes I Accept All Major Credit Card";
+         }
+         function fn1() {
+         var pRef = document.getElementById("p2")
+
+         pRef.innerText = "Yes I Support Local Farmer";
+         }
+         function fn2(){
+             var pRef = document.getElementById("p3")
+             pRef.innerText = "Yes I Use Organic Ingredients";
+         }
+     </script>
+    </head>
+    <body>
+        <div id="main">
+            <div id="i1">General Question</div>
+            <div id="i2">Do You Accept All Major Credit Card?
+                <button onclick="fn()" class="c1">+</button>
+                <p id="p1"></p>
+            </div>
+            <div id="i3">Do You Support Local Farmers?
+                <button onclick="fn1()" class="c1">+</button>
+                <p id="p2"></p>
+            </div>
+            <div id="i4">Do You Use Organic ingredients?
+                <button onclick="fn2()" class="c1">+</button>
+                <p id="p3"></p>
+            </div>
+        </div>
+    </body>
+</html>

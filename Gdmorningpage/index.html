@@ -16,7 +16,7 @@
               padding: 10px;
               box-shadow: 0 0 10px black;
               margin-top: 100px auto;
-              background-color: thistle;
+              background-color: rgb(129, 6, 129);
               text-align: center;
               font-weight: bold;
               flex-direction: column;
@@ -43,20 +43,20 @@
       <script>
           function GM() {
             var nameRef = document.getElementById("name");
-            nameRef.innerText = "Good Morning";
-            nameRef.style.color = "grey";
+            nameRef.innerText = "Hello";
+            nameRef.style.color = "white";
           }
 
           function GE() {
             var nameRef = document.getElementById("name");
-            nameRef.innerText = "Good Evening";
-            nameRef.style.color = "green";
+            nameRef.innerText = "HIII";
+            nameRef.style.color = "yellow";
           }
 
           function GN() {
             var nameRef = document.getElementById("name");
-            nameRef.innerText = "Good Night";
-            nameRef.style.color = "tomato";
+            nameRef.innerText = "How are you?";
+            nameRef.style.color = "gold";
           }
       </script>
 
@@ -64,11 +64,11 @@
     <body>
 <div>
     <div id="main">
-        <div id="i1"><span id="name"></span>Monu Kumar here!</div>
+        <div id="i1"><span id="name"></span> Welcome</div>
         <div class="btn">
-           <button onclick="GM()">Good Morning</button>
-           <button onclick="GE()">Good Evening</button>
-            <button onclick="GN()">Good Night</button>
+           <button onclick="GM()">Hello </button>
+           <button onclick="GE()">HIII </button>
+            <button onclick="GN()">How are you? </button>
         </div>
     </div>
 </div>
